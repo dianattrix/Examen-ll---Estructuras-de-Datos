@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Examen ll - Estructuras de Datos", "Examen ll - Estructuras de Datos\Examen ll - Estructuras de Datos.vcxproj", "{C89B98C8-C55B-492F-8078-0DFBCC90AC79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Debug|x64.ActiveCfg = Debug|x64
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Debug|x64.Build.0 = Debug|x64
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Debug|x86.ActiveCfg = Debug|Win32
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Debug|x86.Build.0 = Debug|Win32
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Release|x64.ActiveCfg = Release|x64
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Release|x64.Build.0 = Release|x64
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Release|x86.ActiveCfg = Release|Win32
+		{C89B98C8-C55B-492F-8078-0DFBCC90AC79}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EEF69E9-B90C-452C-90DB-633AC6A6B4C1}
+	EndGlobalSection
+EndGlobal
