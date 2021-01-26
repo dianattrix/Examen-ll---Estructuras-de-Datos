@@ -1,10 +1,10 @@
 // Examen ll - Estructuras de Datos.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
 #include <iostream>
 #include "Grafo.h"
 
 int main(){
+
     Grafo g(15);
     g.addEdge('A', 'B', 7);
     g.addEdge('A', 'C', 7);
@@ -21,5 +21,6 @@ int main(){
     g.addEdge('C', 'H', 6);
     g.addEdge('G', 'I', 2);
     g.addEdge('H', 'I', 6);
-    g.dijkstra('A');
+ //   g.dijkstra('E');
+    g.primMST();
 }

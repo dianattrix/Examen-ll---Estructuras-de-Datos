@@ -4,7 +4,7 @@
 #include"algorithm"
 #include"DisjointSets.h"
 #include <set>
-
+#include <queue>
 typedef std::pair<char, char> iPair //para kruskal
 ;
 #define INF 0x3f3f3f
@@ -25,4 +25,6 @@ public:
     void dijkstra(char s);
     int kruskalMST();
     void printVector(vector<int>);
+    void primMST();
+    void print(vector<char> parent, vector<int> key);
 };
