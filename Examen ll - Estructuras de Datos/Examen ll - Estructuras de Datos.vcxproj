@@ -142,11 +142,14 @@
     <ClCompile Include="DisjointSets.cpp" />
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
     <ClCompile Include="Grafo.cpp" />
+    <ClCompile Include="GraphPQ.cpp" />
     <ClCompile Include="MachineDetails.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DisjointSets.h" />
     <ClInclude Include="Grafo.h" />
+    <ClInclude Include="GraphPQ.h" />
     <ClInclude Include="MachineDetails.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

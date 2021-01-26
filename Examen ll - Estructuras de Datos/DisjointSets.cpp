@@ -1,7 +1,6 @@
 #include"DisjointSets.h"
 
-DisjointSets::DisjointSets(int n)
-{
+DisjointSets::DisjointSets(int n){
 	this->n = n;
 	parent = new int[n + 1];
 	rnk = new int[n + 1];
@@ -11,8 +10,7 @@ DisjointSets::DisjointSets(int n)
 	}
 }
 
-int DisjointSets::find(int u)
-{
+int DisjointSets::find(int u){
 	if (u != parent[u])
 		parent[u] = find(parent[u]);
 	return parent[u];

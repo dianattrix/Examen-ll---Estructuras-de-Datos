@@ -10,14 +10,17 @@ Grafo::Grafo(int V, int E)
 }
 Grafo::Grafo(int V) {
     this->V = V;
-    adj = new list<pair<int,int>> [V];
+    adj = new list<pair<char,char>> [V];
+  //  adj = new list<iPair>[V];
 }
-void Grafo::addEdge(int u, int v, int w) {
-    adj[u].push_back(make_pair(v,w));
-    adj[v].push_back(make_pair(u,w));
+void Grafo::addEdge(char u, char v, int w) {
+    int i =  (int) u -64;
+    int j = (int) v - 64;
+    adj[i].push_back(make_pair(v,w));
+    adj[j].push_back(make_pair(u,w));
+
 }
-void Grafo::addEdgeKruskal(int u, int v, int w)
-{
+void Grafo::addEdgeKruskal(char u, char v, int w){
     edges.push_back({ w, {u, v} });
 }
 void Grafo::printVector(vector<int> vec) {
@@ -27,23 +30,18 @@ void Grafo::printVector(vector<int> vec) {
     }
     cout<<endl;
 }
+/*
 void Grafo::dijkstra(int scr) {
-    //crea un set para almacenar los vertices que estan siendo procesados
-    set < pair<int,int> > setds;
-    //se crea un vector para ñas distancias y las inicializa en infinito
+    set < pair<char, char> > setds;
+
     vector<int> dist(V,INF);
-    //inserta scren un set einicializa su distancia en 0
     setds.insert(make_pair(0,scr));
     dist[scr] = 0;
-    //ciclo que finaliza cuando todas las distancias mas cortas
-    // han sido finalizadas y setds se convierte en vacio
     while (!setds.empty()){
-        //el primer set de vertices tiene la minima distancia
-        // por tanto se puede extraerdel set
         pair<int,int> tmp = *(setds.begin());
         setds.erase(setds.begin());
         int u= tmp.second;
-        list<pair<int,int>>::iterator i;
+        list<pair<char,char>>::iterator i;
         for(i = adj[u].begin(); i!= adj[u].end(); ++i){
             int v= (*i).first;
             int weight = (*i).second;
@@ -59,9 +57,40 @@ void Grafo::dijkstra(int scr) {
     for(int i = 0; i < V; i++)
         cout<< i << "\t\t" <<dist[i] << endl;
 }
-
-int Grafo::kruskalMST()
-{
+*/
+void Grafo::dijkstra(char scr) {
+    //crea un set para almacenar los vertices que estan siendo procesados
+    set < pair<char, char> > setds;
+    //se crea un vector para ñas distancias y las inicializa en infinito
+    vector<int> dist(V, INF);
+    //inserta scren un set e inicializa su distancia en 0
+    setds.insert(make_pair(0, scr));
+    dist[scr] = 0;
+    //ciclo que finaliza cuando todas las distancias mas cortas
+    // han sido finalizadas y setds se convierte en vacio
+    while (!setds.empty()) {
+        //el primer set de vertices tiene la minima distancia
+        // por tanto se puede extraerdel set
+        pair<char, char> tmp = *(setds.begin());
+        setds.erase(setds.begin());
+        int u = tmp.second;
+        list<pair<char, char>>::iterator i;
+        for (i = adj[u].begin(); i != adj[u].end(); ++i) {
+            int v = (*i).first;
+            int weight = (*i).second;
+            if (dist[v] > dist[u] + weight) {
+                if (dist[v] != INF)
+                    setds.erase(setds.find(make_pair(dist[v], v)));
+                dist[v] = dist[u] + weight;
+                setds.insert(make_pair(dist[v], v));
+            }
+        }
+    }
+    cout << "Vertex     Distance from source\n";
+    for (int i = 0; i < V; i++)
+        cout << i << "\t\t" << dist[i] << endl;
+}
+int Grafo::kruskalMST(){
     int mst_wt = 0;
     sort(edges.begin(), edges.end());
     DisjointSets ds(V);
