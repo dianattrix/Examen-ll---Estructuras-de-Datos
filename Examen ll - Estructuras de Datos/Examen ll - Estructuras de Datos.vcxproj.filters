@@ -18,18 +18,24 @@
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Parse.cpp.cpp">
+    <ClCompile Include="MachineDetails.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grafo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisjointSets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IParse.h">
+    <ClInclude Include="MachineDetails.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Parse.h">
+    <ClInclude Include="Grafo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Coleccion.h">
+    <ClInclude Include="DisjointSets.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

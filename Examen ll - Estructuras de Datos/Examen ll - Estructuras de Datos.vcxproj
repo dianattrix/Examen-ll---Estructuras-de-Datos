@@ -139,13 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DisjointSets.cpp" />
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
-    <ClCompile Include="Parse.cpp.cpp" />
+    <ClCompile Include="Grafo.cpp" />
+    <ClCompile Include="MachineDetails.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Coleccion.h" />
-    <ClInclude Include="IParse.h" />
-    <ClInclude Include="Parse.h" />
+    <ClInclude Include="DisjointSets.h" />
+    <ClInclude Include="Grafo.h" />
+    <ClInclude Include="MachineDetails.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,7 +12,6 @@ MachineDetails::MachineDetails(string name, int concreteQuantity, int gypsumQuan
 	this->concreteQuantity = concreteQuantity;
 	this->gypsumQuantity = gypsumQuantity;
 	this->floorNumber = floorNumber;
-
 }
 
 int MachineDetails::getFloorNumber()
