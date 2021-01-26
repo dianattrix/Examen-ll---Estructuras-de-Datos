@@ -140,6 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
+    <ClCompile Include="Parse.cpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coleccion.h" />
+    <ClInclude Include="IParse.h" />
+    <ClInclude Include="Parse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
