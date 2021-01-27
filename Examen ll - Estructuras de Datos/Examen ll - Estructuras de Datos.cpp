@@ -18,7 +18,7 @@ int main(){
     g.addEdge('D', 'G', 5);
     g.addEdge('E', 'F', 2);
     g.addEdge('F', 'H', 4);
-    g.addEdge('C', 'H', 6);
+    g.addEdge('G', 'H', 6);
     g.addEdge('G', 'I', 2);
     g.addEdge('H', 'I', 6);
  //   g.dijkstra('E');

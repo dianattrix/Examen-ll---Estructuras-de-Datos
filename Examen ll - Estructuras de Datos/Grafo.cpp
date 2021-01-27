@@ -72,7 +72,7 @@ void Grafo::primMST() {
         inMST[u] = true;
         list<pair<char, char>>::iterator i;
         for (i = adj[u].begin(); i != adj[u].end(); ++i) {
-            int v = (*i).first - 65;
+            int v = (*i).first - 64;
             int weight = (*i).second;
             if (inMST[v] == false && key[v] > weight) {
                 key[v] = weight;
@@ -82,8 +82,8 @@ void Grafo::primMST() {
             }
         }
     }
-    for (int i = 1; i < 10; ++i)
-    printf("%d - %d\n", parent[i], i);
+    for (int i = 2; i < 10; ++i)
+        printf("%c - %d\n", parent[i], key[i]);
 }
 /*
 void Graph::primMST()
