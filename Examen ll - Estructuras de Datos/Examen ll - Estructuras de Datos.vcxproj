@@ -146,6 +146,7 @@
     <ClCompile Include="GrafoKruskal.cpp" />
     <ClCompile Include="GrafoPrim.cpp" />
     <ClCompile Include="MachineDetails.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ParseGraph.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +157,7 @@
     <ClInclude Include="GrafoPrim.h" />
     <ClInclude Include="IGrafo.h" />
     <ClInclude Include="MachineDetails.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="ParseGraph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

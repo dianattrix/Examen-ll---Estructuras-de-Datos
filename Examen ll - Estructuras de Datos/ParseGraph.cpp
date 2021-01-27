@@ -1,5 +1,3 @@
-
-
 #include"ParseGraph.h"
 
 ParseGraph::ParseGraph(int tam)

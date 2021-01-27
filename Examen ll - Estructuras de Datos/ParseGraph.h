@@ -1,5 +1,4 @@
 #pragma once
-
 #include "GrafoDijkstra.h"
 #include "GrafoKruskal.h"
 #include "GrafoPrim.h"

@@ -1,8 +1,8 @@
-//
+///*
 // Created by Tere Solano on 18/1/2021.
 //
 #include "Grafo.h"
-
+/*
 Grafo::Grafo(int V) {
     this->V = V;
     adj = new list<pair<int,int>> [V];
@@ -40,7 +40,7 @@ void Grafo::dijkstra(int src) {
         cout << v1 << "\t\t" << dist[i] << endl;
     }
 }
-/*
+
 void Grafo::primMST() {
     priority_queue<iPair, vector<iPair>, greater<iPair>> pq;
     char src = 'A';
@@ -71,7 +71,6 @@ void Grafo::primMST() {
     for (int i = 2; i < 10; ++i)
         printf("%c -> \t%d \n", parent[i], key[i]);
 }
-*/
 void Grafo::primMST() {
     priority_queue<iPair, vector<iPair>, greater<iPair> > pq;
     int src = 0;
@@ -137,3 +136,4 @@ void Grafo::kruskal() {
         cout << "(" << v1 << ", " << v2 << ") = " << arvore[i].getPeso() << endl;
     }
 }
+*/
