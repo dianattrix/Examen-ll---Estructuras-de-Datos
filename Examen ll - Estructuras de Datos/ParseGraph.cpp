@@ -37,6 +37,7 @@ ParseGraph::~ParseGraph()
     delete grafo;
     delete grafoKruskal;
     delete grafoPrim;
+    return;
 }
 
 GrafoDijkstra* ParseGraph::getGrafoDijkstra()
