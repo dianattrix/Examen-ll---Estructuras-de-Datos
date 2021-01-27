@@ -5,7 +5,7 @@ void Menu::menuPrincipal() {
 	ParseGraph g(15);
 	char scr;
 	int num;
-	g.buildGraph("Graph_Data.txt");
+	//g.buildGraph("Graph_Data.txt");
 	do{
 		cout << "--BIENVENIDO AL SISTEMA--" << endl;
 		cout << "1. Cargar datos del archivo" << endl;
@@ -16,8 +16,8 @@ void Menu::menuPrincipal() {
 		cin >> opc;
 		switch (opc){
 		case 1:
-			g.buildGraph("Graph_Data.txt");
 			cout << "Datos cargados" << endl;
+			g.buildGraph("Graph_Data.txt");
 			cout << endl;
 			break;
 		case 2:

@@ -9,7 +9,7 @@ ParseGraph::ParseGraph(int tam){
 void ParseGraph::buildGraph(string filePath) {
     ifstream file(filePath);
 
-    string vertice1, vertice2, peso;
+  //  string vertice1, vertice2, peso;
 
     while (file.good()) {
 
@@ -25,12 +25,11 @@ void ParseGraph::buildGraph(string filePath) {
         grafoPrim->addEdge(_vertice1, _vertice2, _peso);
         grafoKruskal->addEdge(_vertice1, _vertice2, _peso);
 
+        printf("(%c,%c) %d\n",(char)_vertice1 + 65, (char)_vertice2 + 65, _peso);
     }
     file.close();
 }
-
-ParseGraph::~ParseGraph()
-{
+ParseGraph::~ParseGraph(){
     delete grafo;
     delete grafoKruskal;
     delete grafoPrim;

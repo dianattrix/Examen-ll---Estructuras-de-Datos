@@ -5,6 +5,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include <sstream>
 using namespace std;
 
 class ParseGraph {
@@ -13,7 +14,7 @@ private:
     GrafoDijkstra* grafo;
     GrafoPrim* grafoPrim;
     GrafoKruskal* grafoKruskal;
-
+    string vertice1, vertice2, peso;
 public:
     ParseGraph(int tam);
 
@@ -26,5 +27,6 @@ public:
     GrafoPrim* getGrafoPrim();
 
     GrafoKruskal* getGrafoKruskal();
+
 };
 
