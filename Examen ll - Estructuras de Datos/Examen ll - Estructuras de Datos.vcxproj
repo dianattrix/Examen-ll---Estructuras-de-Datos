@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Aristas.cpp" />
-    <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Grafo.cpp" />
     <ClCompile Include="GrafoDijkstra.cpp" />
     <ClCompile Include="GrafoKruskal.cpp" />
