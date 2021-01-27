@@ -143,13 +143,20 @@
     <ClCompile Include="DisjointSets.cpp" />
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
     <ClCompile Include="Grafo.cpp" />
+    <ClCompile Include="GrafoDijkstra.cpp" />
+    <ClCompile Include="GrafoKruskal.cpp" />
+    <ClCompile Include="GrafoPrim.cpp" />
+    <ClCompile Include="IGrafo.cpp" />
     <ClCompile Include="MachineDetails.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aristas.h" />
     <ClInclude Include="DisjointSets.h" />
     <ClInclude Include="Grafo.h" />
+    <ClInclude Include="GrafoDijkstra.h" />
+    <ClInclude Include="GrafoKruskal.h" />
+    <ClInclude Include="GrafoPrim.h" />
+    <ClInclude Include="IGrafo.h" />
     <ClInclude Include="MachineDetails.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
