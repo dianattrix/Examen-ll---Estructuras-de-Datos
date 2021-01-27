@@ -5,7 +5,7 @@ int main(){
     
     Menu menu;
     menu.menuPrincipal();
-    /*MachineDetails ma1;
+   /* MachineDetails ma1;
     MachineDetails ma2;
     MachineDetails ma3;
     MachineDetails ma4;
@@ -32,7 +32,7 @@ int main(){
     ma10 = MachineDetails("10",0,4,1,0);
     ma11 = MachineDetails("11",0,2,0,0);
     ma12 = MachineDetails("12",1,2,0,1);
-    ma13 = MachineDetails("13",3,0,0,1);
+    ma13 = MachineDetails("13",3,0,0,3);
     ma14 = MachineDetails("14",0,1,0,1);
     ma15 = MachineDetails("15",1,3,2,0);
     cout << "Peso total: " << ma1.getFinalWeight()<<endl;
