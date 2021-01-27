@@ -78,12 +78,14 @@ void Grafo::primMST() {
                 key[v] = weight;
                 pq.push(make_pair(key[v], v));
                 char g = (char)u + 64;
+                char f = (char)v + 64;
                 parent[v] = g;
             }
         }
     }
+    cout << "Vertex-Weight \n";
     for (int i = 2; i < 10; ++i)
-        printf("%c - %d\n", parent[i], key[i]);
+        printf("%c -> \t%d \n", parent[i], key[i]);
 }
 /*
 void Graph::primMST()

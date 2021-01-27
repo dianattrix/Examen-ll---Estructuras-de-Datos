@@ -15,7 +15,6 @@ private:
     list< pair <char,char> >* adj;
     int E; //para kruskal
     vector<pair<int, iPair>> edges; //para kruskal
-    int graph[T][T];
 public:
     Grafo(int V, int E); //para kruskal
     Grafo(int V);
