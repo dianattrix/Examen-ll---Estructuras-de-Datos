@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include"algorithm"
-#include"DisjointSets.h"
 #include <set>
 #include <queue>
 #include "Aristas.h"
@@ -14,7 +13,7 @@ class Grafo {
 private:
     int V;
     list< pair <int,int> >* adj;
-    vector<Aresta> aristas; 
+    vector<Arista> aristas; 
 public:
     Grafo(int V);
    // void addEdge(char u, char v,int peso);

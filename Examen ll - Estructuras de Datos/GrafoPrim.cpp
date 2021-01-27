@@ -9,7 +9,9 @@ void GrafoPrim::addEdge(int u, int v, int w) {
     adj[u].push_back(make_pair(v, w));
     adj[v].push_back(make_pair(u, w));
 }
-
+GrafoPrim::~GrafoPrim() {
+   
+}
 void GrafoPrim::primMST() {
     priority_queue<iPair, vector<iPair>, greater<iPair> > pq;
     int src = 0;

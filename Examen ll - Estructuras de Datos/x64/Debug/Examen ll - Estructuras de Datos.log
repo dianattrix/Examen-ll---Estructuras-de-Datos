@@ -1,4 +1,7 @@
-﻿  Examen ll - Estructuras de Datos.cpp
-C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\Examen ll - Estructuras de Datos\Examen ll - Estructuras de Datos.cpp(12,15): error C2228: el operando izquierdo de '.addEdge' debe tener class/struct/union
-C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\Examen ll - Estructuras de Datos\Examen ll - Estructuras de Datos.cpp(12,15): message : el tipo es 'IGrafo *'
-C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\Examen ll - Estructuras de Datos\Examen ll - Estructuras de Datos.cpp(12,15): message : ¿deseaba utilizar '->' en su lugar?
+﻿  GrafoDijkstra.cpp
+  GrafoKruskal.cpp
+C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\Examen ll - Estructuras de Datos\GrafoKruskal.cpp(26,38): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\Examen ll - Estructuras de Datos\GrafoKruskal.cpp(40,36): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  GrafoPrim.cpp
+  Generando código...
+  Examen ll - Estructuras de Datos.vcxproj -> C:\Users\Tere Solano\source\repos\Examen-ll---Estructuras-de-Datos\II examen\x64\Debug\Examen ll - Estructuras de Datos.exe

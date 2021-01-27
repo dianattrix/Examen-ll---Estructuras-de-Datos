@@ -24,13 +24,7 @@
     <ClCompile Include="Grafo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DisjointSets.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Aristas.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IGrafo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GrafoPrim.cpp">
@@ -48,9 +42,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Grafo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DisjointSets.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Aristas.h">

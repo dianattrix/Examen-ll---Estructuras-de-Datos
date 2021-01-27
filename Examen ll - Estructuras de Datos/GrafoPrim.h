@@ -6,7 +6,6 @@
 #include"algorithm"
 #include <set>
 #include <queue>
-#define T 15
 typedef std::pair<int, int> iPair;
 #define INF 0x3f3f3f
 using namespace std;
@@ -19,5 +18,6 @@ public:
     GrafoPrim(int V);
     void addEdge(int u, int v, int peso);
     void primMST();
+    virtual ~GrafoPrim();
 };
 

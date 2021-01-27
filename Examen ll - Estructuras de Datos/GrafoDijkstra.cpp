@@ -34,3 +34,6 @@ void GrafoDijkstra::dijkstra(int src) {
         cout << v1 << "\t\t" << dist[i] << endl;
     }
 }
+GrafoDijkstra::~GrafoDijkstra() {
+  
+}
