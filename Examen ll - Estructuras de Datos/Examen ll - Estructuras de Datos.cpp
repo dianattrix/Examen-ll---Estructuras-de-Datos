@@ -11,7 +11,7 @@ int main(){
 
     ParseGraph g(15);
 
-    g.buildGraph("C:\\Users\\diana\\Documents\\GitHub\\Examen ll - Estructuras de Datos\\Examen ll - Estructuras de Datos\\Graph_Data.txt");
+    g.buildGraph("Graph_Data.txt");
     //g.getGrafoDijkstra()->dijkstra(0);
     g.getGrafoKruskal()->kruskal();
     //g.getGrafoPrim()->primMST();
