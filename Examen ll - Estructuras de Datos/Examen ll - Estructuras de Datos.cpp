@@ -24,7 +24,7 @@ int main(){
     cout << "Prim: " << endl;
     g.getGrafoPrim()->primMST();
     
-    cout << endl << endl;
+    g.~ParseGraph();
     return 0;
 
 }
