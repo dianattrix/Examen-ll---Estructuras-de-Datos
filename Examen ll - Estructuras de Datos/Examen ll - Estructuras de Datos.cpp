@@ -12,31 +12,19 @@ int main(){
     ParseGraph g(15);
 
     g.buildGraph("Graph_Data.txt");
-    //g.getGrafoDijkstra()->dijkstra(0);
+
+    cout << "Dijkstra: " << endl;
+    g.getGrafoDijkstra()->dijkstra(0);
+    cout << endl << endl;
+
+    cout << "Kruskal: " << endl;
     g.getGrafoKruskal()->kruskal();
-    //g.getGrafoPrim()->primMST();
+    cout << endl << endl;
+
+    cout << "Prim: " << endl;
+    g.getGrafoPrim()->primMST();
     
-    cout << endl << endl << endl;
-
-    GrafoKruskal gD(15);
-    gD.addEdge(0, 1, 7);
-    gD.addEdge(0, 2, 7);
-    gD.addEdge(1, 2, 8);
-    gD.addEdge(1, 3, 5);
-    gD.addEdge(2, 4, 4);
-    gD.addEdge(2, 5, 2);
-    gD.addEdge(3, 4, 4);
-    gD.addEdge(3, 5, 8);
-    gD.addEdge(3, 7, 2);
-    gD.addEdge(3, 6, 5);
-    gD.addEdge(4, 5, 2);
-    gD.addEdge(5, 7, 4);
-    gD.addEdge(6, 7, 6);
-    gD.addEdge(6, 8, 2);
-    gD.addEdge(7, 8, 6);
-
-
-    gD.kruskal();
+    cout << endl << endl;
     return 0;
 
 }

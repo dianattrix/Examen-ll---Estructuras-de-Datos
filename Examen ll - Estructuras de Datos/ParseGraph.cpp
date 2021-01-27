@@ -18,7 +18,7 @@ void ParseGraph::buildGraph(string filePath) {
 
         getline(file, vertice1, ',');
         getline(file, vertice2, ',');
-        getline(file, peso, ',');
+        getline(file, peso, '\n');
 
         int  _vertice1 = atoi(vertice1.c_str());
         int  _vertice2 = atoi(vertice2.c_str());
