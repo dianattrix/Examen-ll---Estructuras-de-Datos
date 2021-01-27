@@ -10,12 +10,12 @@ private:
 	int gypsumQuantity;
 	int floorNumber;
 	float finalWeight;
-
+	int addiQuatity;
 public:
 
 	MachineDetails();
 
-	MachineDetails(string name, int concreteQuantity, int gypsumQuantity, int floorNumber);
+	MachineDetails(string name, int concreteQuantity, int gypsumQuantity, int floorNumber, int addicional);
 
 	int getFloorNumber();
 
@@ -24,6 +24,10 @@ public:
 	int getConcreteQuantity();
 
 	int getGypsumQuantity();
+
+	int getAddiQuatity();
+
+	void setAddiQuatity(int);
 
 	string getName();
 

@@ -1,7 +1,6 @@
 #include"ParseGraph.h"
 
-ParseGraph::ParseGraph(int tam)
-{
+ParseGraph::ParseGraph(int tam){
     grafo = new GrafoDijkstra(tam);
     grafoPrim = new GrafoPrim(tam);
     grafoKruskal = new GrafoKruskal(tam);
