@@ -30,6 +30,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Aristas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MachineDetails.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DisjointSets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aristas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,15 +3,9 @@
 //
 
 #include "Grafo.h"
-Grafo::Grafo(int V, int E)
-{
-    this->V = V;
-    this->E = E;
-}
 Grafo::Grafo(int V) {
     this->V = V;
     adj = new list<pair<char,char>> [V];
-  //  adj = new list<iPair>[V];
 }
 
 void Grafo::addEdge(char u, char v, int w) {
@@ -19,18 +13,6 @@ void Grafo::addEdge(char u, char v, int w) {
     int j = (int) v - 64;
     adj[i].push_back(make_pair(v,w));
     adj[j].push_back(make_pair(u,w));
-
-}
-void Grafo::addEdgeKruskal(char u, char v, int w){
-    edges.push_back({ w,{u,v} });
-}
-
-void Grafo::printVector(vector<int> vec) {
-    vector<int>::iterator it;
-    for(it = vec.begin(); it != vec.end(); ++it){
-        cout<<*it<<"\t";
-    }
-    cout<<endl;
 }
 void Grafo::dijkstra(char scr) {
     set < pair<char, char> > setds;
@@ -88,40 +70,43 @@ void Grafo::primMST() {
     for (int i = 2; i < 10; ++i)
         printf("%c -> \t%d \n", parent[i], key[i]);
 }
-int Grafo::kruskalMST(){
-    int mst_wt = 0;
-    sort(edges.begin(), edges.end());
-    DisjointSets ds(V);
-    vector<pair<int, iPair>>::iterator it;
-    for (it = edges.begin(); it != edges.end(); it++) {
-        int u = it->second.first;
-        int v = it->second.second;
+void Grafo::adicionarAresta(int v1, int v2, int peso) {
+    Aresta aresta(v1, v2, peso);
+    arestas.push_back(aresta);
+}
 
-        int  set_u = ds.find(u);
-        int set_v = ds.find(v);
+int Grafo::buscar(int subset[], int i) {
+    if (subset[i] == -1)
+        return i;
+    return buscar(subset, subset[i]);
+}
 
-        if (set_u != set_v) {
-            cout << u << "-" << v << endl;
-            mst_wt += it->first;
-            ds.merge(set_u, set_v);
+void Grafo::unir(int subset[], int v1, int v2) {
+    int v1_set = buscar(subset, v1);
+    int v2_set = buscar(subset, v2);
+    subset[v1_set] = v2_set;
+}
+void Grafo::kruskal() {
+    vector<Aresta> arvore;
+    int size_arestas = arestas.size();
+    sort(arestas.begin(), arestas.end());
+    int* subset = new int[V];
+    memset(subset, -1, sizeof(int) * V);
+
+    for (int i = 0; i < size_arestas; i++) {
+        int v1 = buscar(subset, arestas[i].obterVertice1());
+        int v2 = buscar(subset, arestas[i].obterVertice2());
+
+        if (v1 != v2) {
+            arvore.push_back(arestas[i]);
+            unir(subset, v1, v2); 
         }
     }
-    return mst_wt;
-}
 
-/*
-void Grafo::print(vector<int> parent, vector<int> key)
-{
-    cout << "Edge \tWeight\n";
-    for (int i = 1; i < V; i++)
-    {
-        //cout << parent[i] << "-" << i << "\t" << graph[i][parent[i]] << "\n";
-
+    int size_arvore = arvore.size();
+    for (int i = 0; i < size_arvore; i++) {
+        char v1 = 'A' + arvore[i].obterVertice1();
+        char v2 = 'A' + arvore[i].obterVertice2();
+        cout << "(" << v1 << ", " << v2 << ") = " << arvore[i].obterPeso() << endl;
     }
-}
-*/
-void Grafo::print(vector<char> parent, vector<int> key) {
-    cout << "Edge \t Weight\n";
-    for (int i = 0; i < V; i++)
-        cout << parent[i] << " - " << i << " \t" << key[i] << " \n";
 }

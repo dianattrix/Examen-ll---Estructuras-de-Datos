@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Aristas.cpp" />
     <ClCompile Include="DisjointSets.cpp" />
     <ClCompile Include="Examen ll - Estructuras de Datos.cpp" />
     <ClCompile Include="Grafo.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Aristas.h" />
     <ClInclude Include="DisjointSets.h" />
     <ClInclude Include="Grafo.h" />
     <ClInclude Include="MachineDetails.h" />

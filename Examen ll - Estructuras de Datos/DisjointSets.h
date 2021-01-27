@@ -2,14 +2,14 @@
 #include<iostream>
 using namespace std;
 
-class DisjointSets
-{
+class DisjointSets{
 private:
-    int* parent, * rnk;
+    int* rnk;
+    char* parent;
     int n;
 
 public:
     DisjointSets(int n);
-    int find(int u);
-    void merge(int x, int y);
+    int find(char u);
+    void merge(char x, char y);
 };
