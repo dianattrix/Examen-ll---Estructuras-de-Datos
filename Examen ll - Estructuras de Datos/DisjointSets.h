@@ -1,12 +1,15 @@
 #pragma once
+#include<iostream>
+using namespace std;
 
-class DisjointSets {
+class DisjointSets
+{
 private:
-	int* parent, * rnk;
-	int n;
+    int* parent, * rnk;
+    int n;
 
 public:
-	DisjointSets(int n);
-	int find(int u);
-	void merge(int x, int y);
+    DisjointSets(int n);
+    int find(int u);
+    void merge(int x, int y);
 };
