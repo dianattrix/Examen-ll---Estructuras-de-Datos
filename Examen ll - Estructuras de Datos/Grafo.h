@@ -5,8 +5,8 @@
 #include"DisjointSets.h"
 #include <set>
 #include <queue>
-typedef std::pair<char, char> iPair //para kruskal
-;
+#define T 15
+typedef std::pair<char, char> iPair;
 #define INF 0x3f3f3f
 using namespace std;
 class Grafo {
@@ -15,10 +15,11 @@ private:
     list< pair <char,char> >* adj;
     int E; //para kruskal
     vector<pair<int, iPair>> edges; //para kruskal
-
+    int graph[T][T];
 public:
     Grafo(int V, int E); //para kruskal
     Grafo(int V);
+
     void addEdge(char u, char v,int peso);
     void Kruskal();
     void addEdgeKruskal(char u, char v, int peso);

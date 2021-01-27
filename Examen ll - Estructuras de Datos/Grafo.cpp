@@ -77,13 +77,50 @@ void Grafo::primMST() {
             if (inMST[v] == false && key[v] > weight) {
                 key[v] = weight;
                 pq.push(make_pair(key[v], v));
+                char g = (char)u + 64;
+                parent[v] = g;
+            }
+        }
+    }
+    for (int i = 1; i < 10; ++i)
+    printf("%d - %d\n", parent[i], i);
+}
+/*
+void Graph::primMST()
+{
+    // Create a priority queue to store vertices that 
+    // are being preinMST. This is weird syntax in C++. 
+    // Refer below link for details of this syntax 
+    // http://geeksquiz.com/implement-min-heap-using-stl/ 
+    priority_queue< iPair, vector <iPair>, greater<iPair> > pq;
+
+    int src = 0; // Taking vertex 0 as source 
+
+    // Create a vector for keys and initialize all 
+    // keys as infinite (INF) 
+    vector<int> key(V, INF);
+    vector<int> parent(V, -1); 
+    vector<bool> inMST(V, false);
+    pq.push(make_pair(0, src));
+    key[src] = 0;
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+        inMST[u] = true;  
+        list< pair<int, int> >::iterator i;
+        for (i = adj[u].begin(); i != adj[u].end(); ++i) {
+            int v = (*i).first;
+            int weight = (*i).second;
+            if (inMST[v] == false && key[v] > weight)  {
+                key[v] = weight;
+                pq.push(make_pair(key[v], v));
                 parent[v] = u;
             }
         }
     }
-    print(parent, key);
-}
-
+    for (int i = 1; i < V; ++i)
+        printf("%d - %d\n", parent[i], i);
+}*/
 int Grafo::kruskalMST(){
     int mst_wt = 0;
     sort(edges.begin(), edges.end());
