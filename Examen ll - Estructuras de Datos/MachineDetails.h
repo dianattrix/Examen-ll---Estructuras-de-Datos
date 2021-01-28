@@ -4,7 +4,7 @@ using namespace std;
 
 class MachineDetails {
 private:
-	string name;
+	int name1, name2;
 
 	int concreteQuantity;
 	int gypsumQuantity;
@@ -15,7 +15,7 @@ public:
 
 	MachineDetails();
 
-	MachineDetails(string name, int concreteQuantity, int gypsumQuantity, int floorNumber, int addicional);
+	MachineDetails(int name1, int name2, int concreteQuantity, int gypsumQuantity, int floorNumber, int addicional);
 
 	int getFloorNumber();
 
@@ -29,13 +29,17 @@ public:
 
 	void setAddiQuatity(int);
 
-	string getName();
-
 	void setConcreteQuantity(int concreteQuantity);
 
 	void setGypsumQuantity(int gypsumQuantity);
 
-	void setName(string name);
+	void setName1(int name1);
+
+	void setName2(int name2);
+
+	int getName1();
+
+	int getName2();
 
 	void setFinalWeight();
 

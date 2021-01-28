@@ -148,6 +148,7 @@
     <ClCompile Include="MachineDetails.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ParseGraph.cpp" />
+    <ClCompile Include="WriteGraph.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aristas.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="MachineDetails.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ParseGraph.h" />
+    <ClInclude Include="WriteGraph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

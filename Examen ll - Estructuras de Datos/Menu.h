@@ -6,6 +6,8 @@
 #include "GrafoKruskal.h"
 #include "GrafoPrim.h"
 #include "ParseGraph.h"
+#include "WriteGraph.h"
+
 using namespace std;
 
 class Menu{
