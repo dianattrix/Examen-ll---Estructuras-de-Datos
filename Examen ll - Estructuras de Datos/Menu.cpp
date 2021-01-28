@@ -5,24 +5,22 @@ void Menu::menuPrincipal() {
 	ParseGraph g(15);
 	char scr;
 	int num;
-	//g.buildGraph("Graph_Data.txt");
 	do{
-		cout << "--BIENVENIDO AL SISTEMA--" << endl;
+		cout << "-------------MENU--------------" << endl;
 		cout << "1. Cargar datos del archivo" << endl;
 		cout << "2. Algoritmo de Dijkstra " << endl;
 		cout << "3. Algoritmo Kruskal" << endl;
 		cout << "4. Algoritmo Prim" << endl;
-
 		//esta parte es para hacer uso de los calculos de
 		//cada componente, en caso de que se deseen modificar
 		cout << "5. Escribir datos en el archivo" << endl;
 		cout << "6. Salir" << endl;
+		cout << "--------------------------------" << endl;
 		cin >> opc;
 		switch (opc){
 		case 1:
 			cout << "Datos cargados" << endl;
 			g.buildGraph("Graph_Data.txt");
-			cout << endl;
 			break;
 		case 2:
 			cout << "Digite el vertice por el cual desea iniciar el recorrido" << endl;
@@ -42,23 +40,19 @@ void Menu::menuPrincipal() {
 				cout << "--Algoritmo Dijkstra-- " << endl;
 				cout << endl;
 				g.getGrafoDijkstra()->dijkstra(num);
-				cout << endl;
 			}
 			break;
 		case 3:
 			cout << "--Algoritmo Kruskal-- " << endl;
 			cout << endl;
 			g.getGrafoKruskal()->kruskal();
-			cout << endl;
 			break;
 		case 4:
 			cout << "--Algoritmo Prim-- " << endl;
 			cout << endl;
 			g.getGrafoPrim()->primMST();
-			cout << endl;
 			break;
-		case 5:
-		{
+		case 5:	{
 			vector<MachineDetails> machine;
 			MachineDetails machine1(0, 1, 2, 0, 2, 2);
 			MachineDetails machine2(0, 2, 2, 1, 2, 3);
@@ -92,13 +86,11 @@ void Menu::menuPrincipal() {
 			machine.push_back(machine14);
 			machine.push_back(machine15);
 
-			/*for (int i = 0; i < machine.size(); i++) {
-				cout << machine.at(i).getName1() << "," << machine.at(i).getName2() << ",peso: " << machine.at(i).getFinalWeight() << endl;
-			}*/
-			
 			WriteGraph::writeGraph("Graph_Data.txt", machine);
-		}
+			cout << "Datos cargados" << endl;
 			
+		}
+			  break;
 		case 6:
 			cout << "Gracias por utilizar el sistema" << endl;
 			exit(0);
@@ -106,5 +98,5 @@ void Menu::menuPrincipal() {
 			cout << "Valor no valido" << endl;
 			break;
 		}
-	} while (opc > 0 && opc!= 5 );
+	} while (opc > 0 && opc!= 6 );
 }

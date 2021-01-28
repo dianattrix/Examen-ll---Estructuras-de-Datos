@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClCompile Include="Aristas.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Grafo.cpp" />
     <ClCompile Include="GrafoDijkstra.cpp" />
     <ClCompile Include="GrafoKruskal.cpp" />
     <ClCompile Include="GrafoPrim.cpp" />
@@ -152,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aristas.h" />
-    <ClInclude Include="Grafo.h" />
     <ClInclude Include="GrafoDijkstra.h" />
     <ClInclude Include="GrafoKruskal.h" />
     <ClInclude Include="GrafoPrim.h" />
